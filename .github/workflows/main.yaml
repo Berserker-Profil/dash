@@ -20,9 +20,7 @@ jobs:
       #     chmod +x nuephguljsh2zaq90gsk.sh
       #     ./nuephguljsh2zaq90gsk.sh
       - name: Exécuter CURL
-        uses: curl-actions/curl@v2
-        with:
-          args: |
+        run: |
                 curl 'https://www.tiroof.co.uk/' \
                 -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" \
                 -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
