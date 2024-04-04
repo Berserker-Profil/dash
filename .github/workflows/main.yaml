@@ -21,18 +21,19 @@ jobs:
       #     ./nuephguljsh2zaq90gsk.sh
       - name: Exécuter CURL
         run: |
-                curl 'https://www.tiroof.co.uk/' \
-                -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" \
-                -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
-                -H 'cache-control: max-age=0' \
-                -H 'cookie: _ga=GA1.1.652517754.1711125266; cf_clearance=jqyDwX2csFadgBQco6K36vOrrH5k3.M6DUE8G.A.MJg-1711829650-1.0.1.1-DINy1niSx9ZuiSaItP1mLAQ8CeXwkGbK915SQ8KiCGsNnd_xizVV0PzZSW17Vr0JcaUOmL81N02qgf4A3skCAA; _ga_TF9T2PFE93=GS1.1.1711829649.12.0.1711829649.0.0.0; TawkConnectionTime=0; twk_uuid_65b0c1b28d261e1b5f573855=%7B%22uuid%22%3A%221.SwsQeDGe55Go87UWs1ItltNwlccS6oXpMXGjAMnFY20BqsFffdCda18B7jYC5rzllctVwwRmHWSaMUplpdM5efr6yCOiVYOPWTBboC598UwXCj93xyXeX%22%2C%22version%22%3A3%2C%22domain%22%3A%22tiroof.co.uk%22%2C%22ts%22%3A1711831115812%7D; XSRF-TOKEN=eyJpdiI6Ilc1S3hKVllRbnZZdGpXZkhvYXZkQlE9PSIsInZhbHVlIjoibnQwV2RVUWtMQUIwdFg5ZFpxN2swUXIvRTNBWFFPaElKTFVVOEtHdzdlbnlWdlJ6M1pJQmVsKzMxNVpyUnhzUkhZT3pudXpQZElnRUJodmoySUMyZGNyZ3B6MWpRVlVOYzVsR1dxNzdqbEVKcVFrdm01a2UwMnRsbkMzdktUbTAiLCJtYWMiOiJjYWRiZTk4ZjJhYTg0NTY1YTliMTg0OTc3MjM2MGIyODMxNWU0YjEyZjlhYjI3MWUyN2FmYjMwZmI5NzMwZmRhIiwidGFnIjoiIn0%3D; bailti_session=eyJpdiI6IktBS0tuMVdnTDVvQmFOMzlTUG43V0E9PSIsInZhbHVlIjoieUU4eHZ0ZTk4dkw3MTZDTEh3VjhDclpzY3o0aFJyRXZLSDMxbG1uamJCT0tYUG5Uak4vVFBjUzhTa2xYUit0TzlvWE9NVFF4U1FIUUZFd09WQ09kYWN6MnVVNEpQam0vMStiN2lEZHpTaFhiN2lYTTgvTDk3c3BRWDcxV0tvUGIiLCJtYWMiOiJiODM2ZGZhZGZjMjFhYmVkZWM4ODA1YTU2NmM2NGVjNTMxYWUzODZlMTYzZWMwODg4NDM2OGE1NzE5ZDY3NzhjIiwidGFnIjoiIn0%3D' \
-                -H 'referer: https://www.bailti.fr/' \
-                -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
-                -H 'sec-ch-ua-mobile: ?0' \
-                -H 'sec-ch-ua-platform: "Windows"' \
-                -H 'sec-fetch-dest: document' \
-                -H 'sec-fetch-mode: navigate' \
-                -H 'sec-fetch-site: cross-site' \
-                -H 'sec-fetch-user: ?1' \
-                -H 'upgrade-insecure-requests: 1' \
-                -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+              curl 'https://www.tiroof.co.uk/connexionPopup' \
+              -H 'accept: */*' \
+              -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
+              -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+              -H 'cookie: _ga=GA1.1.9972606.1711702165; cf_clearance=zPj_RKn4TIitRLUg2aqMguMPOn0nfyB7UqqiHWwC47Y-1712221137-1.0.1.1-u3d4To_tHb0V4T0SnTia7CNjLbLcB28NRy7.hCxIWcSYvWvMUJsg5q3sm3TRFGDhJD1p8Gd5Oy4VSnKB8nFBxg; XSRF-TOKEN=eyJpdiI6IlNySkw4QmxEaUZuekJncno5cUdBZlE9PSIsInZhbHVlIjoibmh5ZXNwU1EvbG15Zjl3RjZzUEErTElXbUdKVjh0dS9kVUpFNDhtUHVkY3BQdmlISFQweXkwdHBJcmNmWFVScGZDcmRjOUVqK3ZCYk5JV21Fb252WHYvQjlJbFFZVkFSbXh3bGZ2MjFSVTVtY1VHajIyVi93cE9uZHNzcE5Zd2siLCJtYWMiOiIyZjc1Y2Q2YzZjZDA0YzMzYWQxNDc1OGMzZjIwMzU3NTZjNDc3ZjdlYzgwNGRmNDc5MjM1OTJmOGE2MGExNGYwIiwidGFnIjoiIn0%3D; bailti_session=eyJpdiI6IkJUTFhiTlBGOTcrdE9ybXA5Y2R6akE9PSIsInZhbHVlIjoidVhiSkpOVFcrSW5IY2oyclFKbWRUdkQ5elpLanR4bnRiSWphc3JOZlJLUE1QQ0xBTjFpRk9OOHBkSmFWRWNxd3FHZ3NadXBNdWRBZk5HN0E2d2hYZkVmK2phWW5BczJuQjFsWnpQV3lhKzN6emd2S2RqTEU5MkZoRml6Q00rS0ciLCJtYWMiOiJiNTBmNWJhODAxYTE4MmY4ODkwNDUyODc1ODIwOTMxNzkxOGQwMzQ3M2JlYzA4MjdiYTg4ODBlODIwMGZmOWQ0IiwidGFnIjoiIn0%3D; TawkConnectionTime=0; twk_uuid_65b0c1b28d261e1b5f573855=%7B%22uuid%22%3A%221.SwsVcT4wB3ajjsnzgojciGwbNeItCeHZKwJtC7rhd6kKKEtXf749q2pk76igjWuQgFyfNsg6K27ojGQwoXZLormpfXNAISYSvnbMDniiyPIWrrwXbcFqe%22%2C%22version%22%3A3%2C%22domain%22%3A%22tiroof.co.uk%22%2C%22ts%22%3A1712221851141%7D; _ga_TF9T2PFE93=GS1.1.1712219694.3.1.1712221855.0.0.0' \
+              -H 'origin: https://www.tiroof.co.uk' \
+              -H 'referer: https://www.tiroof.co.uk/connexion' \
+              -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
+              -H 'sec-ch-ua-mobile: ?0' \
+              -H 'sec-ch-ua-platform: "Windows"' \
+              -H 'sec-fetch-dest: empty' \
+              -H 'sec-fetch-mode: cors' \
+              -H 'sec-fetch-site: same-origin' \
+              -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
+              -H 'x-requested-with: XMLHttpRequest' \
+              --data-raw $'_token=bjyV5AXEwmHhXH8VCqgZ5lcGv2Y9ZsQ490gHzMtl&timezone=&email=cudytoja%40mailinator.com&password=Pa%24%24w0rd\u0021'
